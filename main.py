@@ -1,5 +1,4 @@
 import random
-import os
 pontos = 100
 escolha = 0
 ultimo_dano = 0
@@ -94,7 +93,7 @@ else:
         print("Sua energia atual: ", pontos)
         if(pontos <= 0):
             print("Apesar de todos seus esforços, e sua capacidade estratégica, a natureza foi mais forte, e você sucumbiu...")
-            os.exit(0)
+            quit()
     else:
         ultimo_dano = random.randint(10 ,25)
         pontos += ultimo_dano
@@ -122,7 +121,7 @@ if(escolha == "1"):
     print("Sua energia atual: ", pontos)
     if(pontos <= 0):
         print("Apesar de todos seus esforços, e sua capacidade estratégica, a natureza foi mais forte, e você sucumbiu...")
-        os.exit(0)
+        quit()
 else:
     ultimo_dano = random.randint(5 ,15)
     pontos -= ultimo_dano
@@ -131,14 +130,14 @@ else:
     print("Sua energia atual: ", pontos)
     if(pontos <= 0):
         print("Apesar de todos seus esforços, e sua capacidade estratégica, a natureza foi mais forte, e você sucumbiu...")
-        os.exit(0)
+        exit()
 print("\n")
 input("Aperte ENTER para continuar")
 print("\n")
 if(pontos >= 70):
     print("O resgate chega e você está tão bem que dá até para dar autógrafos para os socorristas.\n"\
           "(Final Alegre – Você foi resgatado, e até parece que esteve em um spa por dias!)")
-elif(pontos <= 69 or pontos >= 30):
+elif(pontos >= 30):
     print("O resgate chega, mas você está tão fraco que mal consegue fazer uma piada.\n"\
           "(Final Irônico – Você sobreviveu, mas está mais parecendo um zumbi do que um herói.)")
 else:
