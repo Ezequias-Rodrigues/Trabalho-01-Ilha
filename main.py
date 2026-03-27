@@ -114,7 +114,7 @@ while (escolha == 0):
             escolha = 0
         print("\n")
 if(escolha == "1"):
-    ultimo_dano = random.randint(10 ,25)
+    ultimo_dano = random.randint(15 ,30)
     pontos -= ultimo_dano
     print("Você gasta", ultimo_dano, "de energia para construir o abrigo." \
     "\nPela manhã, pescadores da ilha o encontram e decidem ajudá-lo.")
@@ -143,3 +143,11 @@ elif(pontos >= 30):
 else:
     print("O resgate chega, mas ele mal consegue levantar e até acha que o socorro é só mais um pesadelo.\n"\
           "(Final Surreal – Você foi resgatado, mas vai precisar de muitos cafés para voltar à vida normal!)")
+
+
+#Feito por:
+#Davi Rodrigues da Cruz da Silva
+#Ezequias Rodrigues dos SantosEzequias Rodrigues dos Santos
+#Gabriel Duarte Edde LimaGabriel Duarte Edde Lima
+#Gustavo Moreira RainehrGustavo Moreira Rainehr
+#Link do fluxograma: #TODO
